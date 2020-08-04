@@ -1,0 +1,13 @@
+.Form-section {
+  height: 50rem;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 3rem;
+  box-shadow: var(--sha);
+
+  &__form {
+  }
+}

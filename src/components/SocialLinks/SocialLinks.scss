@@ -1,0 +1,46 @@
+.social {
+  width: 18%;
+  position: absolute;
+  top: 12%;
+  right: 20%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+
+  &:before,
+  &:after {
+    content: "";
+    height: 0.5px;
+    width: 4rem;
+    background-color: white;
+    position: absolute;
+    right: 0;
+  }
+
+  &:before {
+    top: 50%;
+    left: -50%;
+  }
+
+  &:after {
+    bottom: 50%;
+    right: -50%;
+  }
+
+  &__icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    & i {
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      -webkit-filter: none;
+      filter: none;
+    }
+  }
+}

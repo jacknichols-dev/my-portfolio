@@ -1,0 +1,17 @@
+.Input__container {
+  padding: 1rem;
+  width: 100%;
+
+  &__element {
+    border: none;
+    background: var(--sec);
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+
+    &:focus {
+      outline: none;
+      background-color: #d8d8d8;
+    }
+  }
+}

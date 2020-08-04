@@ -1,0 +1,25 @@
+.btn-main {
+  border: none;
+  padding: 1rem 2rem;
+  width: 18rem;
+  background-color: var(--sec);
+  color: var(--lig);
+  border-radius: 10rem;
+  box-shadow: -0.5rem -0.5rem 0.9rem rgba(255, 255, 255, 0.178),
+    0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.178);
+  font-family: inherit;
+  font-size: var(--def);
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--pri);
+  }
+
+  &:active {
+    box-shadow: -0.4rem -0.4rem 0.8rem rgba(255, 255, 255, 0.13),
+      0.4rem 0.5rem 0.7rem rgba(0, 0, 0, 0.205);
+    transform: scale(0.998);
+  }
+}

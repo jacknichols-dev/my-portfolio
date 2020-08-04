@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "portfolio-icons";
+  src: url("./fonts/portfolio-icons.eot?qxvzt0");
+  src: url("./fonts/portfolio-icons.eot?qxvzt0#iefix")
+      format("embedded-opentype"),
+    url("./fonts/portfolio-icons.ttf?qxvzt0") format("truetype"),
+    url("./fonts/portfolio-icons.woff?qxvzt0") format("woff"),
+    url("./fonts/portfolio-icons.svg?qxvzt0#portfolio-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="port-icon-"],
+[class*=" port-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "portfolio-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.port-icon-linkedin:before {
+  content: "\e902";
+}
+.port-icon-git2:before {
+  content: "\e906";
+}
+.port-icon-behance:before {
+  content: "\e900";
+}
+.port-icon-css:before {
+  content: "\e901";
+}
+.port-icon-github:before {
+  content: "\e903";
+}
+.port-icon-home:before {
+  content: "\e904";
+}
+.port-icon-html:before {
+  content: "\e905";
+}
+.port-icon-js:before {
+  content: "\e907";
+}
+.port-icon-phone:before {
+  content: "\e908";
+}
+.port-icon-react:before {
+  content: "\e909";
+}
+.port-icon-sass:before {
+  content: "\e90a";
+}
+.port-icon-user:before {
+  content: "\e90b";
+}
+.port-icon-web:before {
+  content: "\e90c";
+}
+.port-icon-wp:before {
+  content: "\e90d";
+}

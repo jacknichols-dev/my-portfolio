@@ -1,0 +1,67 @@
+.Nav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--sec);
+
+  &__list {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--item:hover,
+    & i {
+      color: var(--pri);
+    }
+
+    &--item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: white;
+
+      &:hover {
+        background-color: darken(#202a36, 4%);
+
+        & p {
+          color: var(--pri);
+        }
+      }
+
+      & i {
+        -webkit-filter: none;
+        filter: none;
+        color: white;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0.3rem;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      & a {
+        height: 100%;
+        padding: 3rem 0;
+      }
+    }
+  }
+}
+
+[class^="port-icon"] p {
+  color: white;
+  font-size: 1.6rem;
+  font-family: var(--f1);
+  text-align: center;
+}

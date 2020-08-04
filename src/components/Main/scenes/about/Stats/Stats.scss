@@ -1,0 +1,101 @@
+.Stats {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 80vh;
+  top: 12rem;
+
+  &__container {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+
+  &__title {
+    color: var(--sec);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    margin: 5rem auto;
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__stat {
+    height: 2rem;
+    position: relative;
+    width: 100%;
+    background-color: var(--lig);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+    color: white;
+    z-index: 0;
+
+    &:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(146, 197, 146);
+      left: 0;
+      z-index: -1;
+    }
+
+    &:nth-of-type(1n) {
+      &:after {
+        width: 95%;
+      }
+    }
+    &:nth-of-type(2n) {
+      &:after {
+        width: 80%;
+      }
+    }
+    &:nth-of-type(3n) {
+      &:after {
+        width: 75%;
+      }
+    }
+    &:nth-of-type(4n) {
+      &:after {
+        width: 75%;
+      }
+    }
+
+    //design
+    &:nth-of-type(5n) {
+      &:after {
+        width: 90%;
+      }
+    }
+    &:nth-of-type(6n) {
+      &:after {
+        width: 95%;
+      }
+    }
+    &:nth-of-type(7n) {
+      &:after {
+        width: 95%;
+      }
+    }
+  }
+}

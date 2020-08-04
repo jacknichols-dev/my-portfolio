@@ -1,21 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Yeseva+One&display=swap");
-
-//fonts
-$f1: "Raleway", sans-serif;
-$f2: "Yeseva One", cursive;
-$def: 1.6rem;
-
-//colours
-$pri: #ebde94;
-$sec: #202a36;
-$ter: #7795ac;
-$lig: #e8e8e8;
-$dar: rgb(11, 16, 22);
-$gra: linear-gradient(#fff, #ebfaff);
-
-//shadows
-$sha: 0 2rem 4rem rgba(#000, 0.2);
-$sha1: -2rem 0.5rem 4rem rgba(#000, 0.2);
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@400;600&display=swap");
+@import "./styles/variables";
+@import "./styles/abstracts";
+@import "./styles/fonts.css";
 
 *,
 *:before,
@@ -31,22 +17,27 @@ html {
 }
 
 body {
-  font-size: $def;
-  font-family: $f1;
-  color: $sec;
+  font-size: var(--def);
+  font-family: var(--f1);
+  color: var(--sec);
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  font-weight: 400;
 }
 
 h1,
 h2,
-h3 {
-  font-family: $f2;
-  color: $lig;
+h3,
+h4 {
+  font-family: var(--f2);
+  color: var(--lig);
+  letter-spacing: -0.1px;
 }
 
 a,
 li,
 ul {
-  color: $sec;
+  color: var(--sec);
   list-style-type: none;
   text-decoration: none;
 }

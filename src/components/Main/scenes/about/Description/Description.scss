@@ -1,0 +1,62 @@
+.About {
+  position: absolute;
+  top: -3rem;
+  width: 60%;
+  height: 85vh;
+  background-color: var(--pri);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  z-index: 99;
+
+  &__container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    padding: 10rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  & h1 {
+    font-size: 6rem;
+    color: white;
+  }
+
+  &__btns {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    width: 40rem;
+
+    *:nth-child(1) {
+      margin-right: 5rem;
+    }
+
+    & * {
+      background-color: var(--pri);
+      color: var(--sec);
+      border: 3px solid transparent;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &__logos {
+    background-color: var(--sec);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-right-radius: 2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7rem;
+  }
+}

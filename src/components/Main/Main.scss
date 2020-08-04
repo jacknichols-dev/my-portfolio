@@ -1,0 +1,57 @@
+.Main {
+  width: 90%;
+  background-image: var(--gra);
+  z-index: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+    display: none;
+  }
+
+  &__home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+
+  &__about {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  &__contact {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+
+    &--illustration {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+[class^="port-icon-"] {
+  font-size: 5rem;
+  color: white;
+
+  &:hover {
+    color: var(--pri);
+  }
+}

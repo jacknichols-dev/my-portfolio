@@ -1,0 +1,24 @@
+.More {
+  width: 15rem;
+  height: 19rem;
+  position: absolute;
+  bottom: -10rem;
+  right: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__info {
+    color: var(--sec);
+  }
+
+  & span {
+    position: absolute;
+    height: 20rem;
+    width: 0.2rem;
+    transform: translateY(3rem);
+    background-color: white;
+    animation: pulse 1.65s infinite linear;
+    z-index: 99;
+  }
+}
