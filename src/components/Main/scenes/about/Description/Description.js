@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../../../UI/Button/Button";
 import Logos from "../../../../UI/TechLogos/TechLogos";
 import "./Description.scss";
+import MyCV from "../../../../../assets/JackNichols-Frontend-developer-CV.docx";
 
 const Description = () => {
   return (
@@ -26,7 +27,11 @@ const Description = () => {
         </p>
         <div className="About__btns">
           <Button value="Portfolio" />
-          <Button value="Download CV" />
+          <Button
+            value="Download CV"
+            download="JackNichols-Frontend-developer-CV.docx"
+            target={MyCV}
+          />
         </div>
         <div className="About__logos">
           <Logos />

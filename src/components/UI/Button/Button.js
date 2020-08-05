@@ -1,8 +1,12 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = ({ value }) => {
-  return <button className="btn-main">{value}</button>;
+const Button = (props) => {
+  return (
+    <a href={props.target} className="btn-main">
+      {props.value}
+    </a>
+  );
 };
 
 export default Button;

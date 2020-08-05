@@ -3,6 +3,7 @@ import "./Console.scss";
 import Button from "../../../../UI/Button/Button";
 import Logos from "../../../../UI/TechLogos/TechLogos";
 import SocialLinks from "../../../../SocialLinks/SocialLinks";
+import MyCV from "../../../../../assets/JackNichols-Frontend-developer-CV.docx";
 
 const Console = () => {
   return (
@@ -23,7 +24,11 @@ const Console = () => {
         </p>
         <div className="console__btns">
           <Button value="Portfolio" />
-          <Button value="Download CV" />
+          <Button
+            value="Download CV"
+            download="JackNichols-Frontend-developer-CV.docx"
+            target={MyCV}
+          />
         </div>
         <Logos />
       </div>

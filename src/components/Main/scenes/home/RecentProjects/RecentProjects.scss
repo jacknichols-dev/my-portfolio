@@ -26,7 +26,15 @@
     overflow: hidden;
     box-shadow: var(--sha);
     border: 3px solid var(--pri);
-    transition: all 0.2s ease;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03) translateY(-0.5rem);
+    }
+
+    &:hover &--links {
+      transform: translateY(0);
+    }
 
     &:nth-of-type(1) {
       animation: reveal 0.7s ease-in;
@@ -36,14 +44,6 @@
     }
     &:nth-of-type(3) {
       animation: reveal 1s ease-in 0.6s backwards;
-    }
-
-    &:hover {
-      transform: scale(1.03) translateY(-0.5rem);
-    }
-
-    &:hover &--links {
-      transform: translateY(0);
     }
 
     &:not(:last-child) {
@@ -65,7 +65,7 @@
       background-color: var(--sec);
       align-items: center;
       justify-content: center;
-      transition: all 0.2s;
+      transition: all 0.5s;
       width: 100%;
       transform: translateY(100%);
 
