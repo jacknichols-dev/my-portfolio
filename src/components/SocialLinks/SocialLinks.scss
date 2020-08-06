@@ -34,6 +34,12 @@
     align-items: center;
     margin: auto;
 
+    &--icon {
+      &:hover {
+        color: var(--pri);
+      }
+    }
+
     & i {
       font-size: 3rem;
       display: flex;

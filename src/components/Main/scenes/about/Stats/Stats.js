@@ -10,8 +10,8 @@ const Stats = () => {
         <ul className="Stats__list">
           <Stat level="95%" name="HTML // CSS"></Stat>
           <Stat level="80%" name="JavaScript // jQuery"></Stat>
-          <Stat level="75%" name="WordPress"></Stat>
-          <Stat level="75%" name="React JS"></Stat>
+          <Stat level="85%" name="WordPress"></Stat>
+          <Stat level="85%" name="React JS"></Stat>
 
           <h4 className="Stats__title">Design</h4>
 

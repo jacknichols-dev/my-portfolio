@@ -6,7 +6,7 @@ import RecentProjects from "./scenes/home/RecentProjects/RecentProjects";
 import More from "./scenes/home/More/More";
 import Description from "./scenes/about/Description/Description";
 import Stats from "./scenes/about/Stats/Stats";
-import Illustration from "./scenes/contact/Illustration/Illustration";
+import ContactInfo from "./scenes/contact/ContactInfo/ContactInfo";
 import Form from "../../containers/ContactData/ContactData";
 
 const Main = () => {
@@ -27,8 +27,10 @@ const Main = () => {
       </section>
 
       <section className="Main__contact" id="contact">
-        <Illustration />
-        <Form />
+        <div className="Main__contact--container">
+          <ContactInfo />
+          <Form />
+        </div>
       </section>
     </div>
   );

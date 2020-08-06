@@ -10,7 +10,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="port-icon-linkedin"></i>
+          <i className="port-icon-linkedin social__icons--icon"></i>
           <p style={{ color: "white", fontSize: "1rem", textAlign: "center" }}>
             Linkedin
           </p>
@@ -20,7 +20,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="port-icon-git2"></i>
+          <i className="port-icon-git2 social__icons--icon"></i>
           <p style={{ color: "white", fontSize: "1rem", textAlign: "center" }}>
             GitHub
           </p>
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="port-icon-behance"></i>
+          <i className="port-icon-behance social__icons--icon"></i>
           <p style={{ color: "white", fontSize: "1rem", textAlign: "center" }}>
             Behance
           </p>

@@ -1,6 +1,5 @@
 .Main {
   width: 90%;
-  background-image: var(--gra);
   z-index: 0;
   height: 100vh;
   overflow-y: scroll;
@@ -15,6 +14,7 @@
   &__home {
     position: relative;
     height: 100vh;
+    background-color: var(--ter);
     width: 100%;
     display: block;
   }
@@ -23,6 +23,7 @@
     min-height: 100vh;
     position: relative;
     width: 100%;
+    background-color: var(--ter);
     display: block;
   }
 
@@ -33,17 +34,13 @@
     display: flex;
     align-items: center;
 
-    background-color: var(--pri);
-
-    &--illustration {
-      width: 50%;
-      height: 100vh;
+    &--container {
+      width: 85%;
+      margin: auto;
+      border-radius: 0.8rem;
       display: flex;
-      align-items: center;
-
-      & img {
-        width: 80%;
-      }
+      background-color: white;
+      box-shadow: var(--sha);
     }
   }
 }
@@ -51,8 +48,4 @@
 [class^="port-icon-"] {
   font-size: 5rem;
   color: white;
-
-  &:hover {
-    color: var(--pri);
-  }
 }

@@ -7,13 +7,21 @@ export default class ContactData extends Component {
     let form = (
       <div className="Form-section">
         <form className="Form-section__form">
-          <h3 style={{ color: "var(--sec)" }}>Get In Touch</h3>
+          <hgroup>
+            <h3 style={{ color: "var(--sec)" }}>Get In Touch</h3>
+            <p>Feel free to drop me a line below.</p>
+          </hgroup>
+          <Input inputType="input" />
+          <Input inputType="input" />
           <Input inputType="input" />
           <Input inputType="input" />
           <Input inputType="textarea" />
+          <button className="Form-section__form--submit" type="submit">
+            SEND
+          </button>
         </form>
       </div>
     );
-    return <div className="Form-section">{form}</div>;
+    return <div className="Form">{form}</div>;
   }
 }

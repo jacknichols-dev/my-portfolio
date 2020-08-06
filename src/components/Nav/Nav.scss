@@ -29,7 +29,7 @@
       color: white;
 
       &:hover {
-        background-color: darken(#202a36, 4%);
+        background-color: darken(#395f75, 4%);
 
         & p {
           color: var(--pri);
@@ -41,27 +41,22 @@
         filter: none;
         color: white;
         font-size: 3rem;
+        height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 0.3rem;
+        padding: 3rem 0;
 
         &:hover {
-          color: white;
+          color: var(--pri);
         }
-      }
-
-      & a {
-        height: 100%;
-        padding: 3rem 0;
       }
     }
   }
-}
-
-[class^="port-icon"] p {
-  color: white;
-  font-size: 1.6rem;
-  font-family: var(--f1);
-  text-align: center;
+  &__icon p {
+    color: white;
+    font-size: 1.6rem;
+    font-family: var(--f1);
+    text-align: center;
+  }
 }
