@@ -1,15 +1,24 @@
+@import "../../../../../styles/abstracts";
+
 .projects {
   width: 60%;
   left: 32%;
   position: absolute;
-  bottom: 20%;
+  bottom: 17rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  @include respond(tab-land) {
+    width: 71%;
+    left: 28%;
+  }
+
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--sec);
+    font-size: 1.8rem;
+    font-family: var(--f2);
   }
 
   &__list {
@@ -24,8 +33,6 @@
     cursor: pointer;
     display: block;
     overflow: hidden;
-    box-shadow: var(--sha);
-    border: 3px solid var(--pri);
     transition: all 0.3s;
 
     &:hover {
@@ -54,12 +61,13 @@
       display: block;
       width: 100%;
       overflow: hidden;
+      border: 3px solid var(--sec);
     }
 
     &--links {
       position: absolute;
       bottom: 0;
-      height: 50%;
+      height: 45%;
       font-size: 1rem;
       display: flex;
       background-color: var(--sec);
@@ -68,10 +76,18 @@
       transition: all 0.5s;
       width: 100%;
       transform: translateY(100%);
+      z-index: 0;
 
       & img {
         width: 15%;
       }
+    }
+
+    &--title {
+      color: var(--ter);
+      text-align: center;
+      padding-bottom: 1rem;
+      font-size: 1.2rem;
     }
 
     &--link-container {
@@ -87,11 +103,11 @@
       color: white;
 
       &:hover {
-        background-color: var(--pri);
-        color: var(--sec);
+        background-color: var(--ter);
+        color: var(--lig);
 
         & i {
-          color: var(--sec);
+          color: var(--lig);
         }
       }
     }

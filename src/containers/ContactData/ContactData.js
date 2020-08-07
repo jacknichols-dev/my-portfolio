@@ -7,7 +7,7 @@ export default class ContactData extends Component {
     let form = (
       <div className="Form-section">
         <form className="Form-section__form">
-          <hgroup>
+          <hgroup className="Form-section__form--heading">
             <h3 style={{ color: "var(--sec)" }}>Get In Touch</h3>
             <p>Feel free to drop me a line below.</p>
           </hgroup>

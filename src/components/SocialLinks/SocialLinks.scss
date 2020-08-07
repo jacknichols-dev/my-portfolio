@@ -1,42 +1,40 @@
+@import "../../styles/abstracts";
+
 .social {
-  width: 18%;
+  width: 23%;
   position: absolute;
   top: 12%;
-  right: 20%;
+  right: 0;
+  margin-right: 7rem;
   display: flex;
   justify-content: space-around;
   z-index: 99;
 
-  &:before,
-  &:after {
-    content: "";
-    height: 0.5px;
-    width: 4rem;
-    background-color: white;
-    position: absolute;
-    right: 0;
-  }
-
-  &:before {
-    top: 50%;
-    left: -50%;
-  }
-
-  &:after {
-    bottom: 50%;
-    right: -50%;
+  @include respond(tab-land) {
+    right: 7%;
+    top: 7%;
+    margin-right: 0;
   }
 
   &__icons {
+    position: relative;
+    margin: 0 1rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 
     &--icon {
+      padding-bottom: 0.5rem;
+
       &:hover {
         color: var(--pri);
+      }
+    }
+
+    & a {
+      &:not(:last-child) {
+        margin-right: 1rem;
       }
     }
 

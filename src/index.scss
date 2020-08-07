@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@400;600&display=swap");
-@import "./styles/variables";
 @import "./styles/abstracts";
 @import "./styles/fonts.css";
 
@@ -14,6 +13,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include respond(laptop) {
+    font-size: 60%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 58%;
+  }
 }
 
 body {

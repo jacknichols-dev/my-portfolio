@@ -1,26 +1,38 @@
+@import "../../../../../styles/abstracts";
+
 .Stats {
-  position: absolute;
+  position: relative;
   width: 75%;
   height: 80vh;
-  background-color: white;
+  background-color: var(--ter);
   top: 12rem;
-  right: 0;
+  float: right;
   box-shadow: var(--sha);
+
+  @include respond(tab-land) {
+    top: 3rem;
+    height: 77rem;
+  }
 
   &__container {
     position: absolute;
     width: 40%;
     height: 100%;
-    right: 5%;
+    right: 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 3rem;
+
+    @include respond(tab-land) {
+      width: 50%;
+      right: 2%;
+    }
   }
 
   &__title {
-    color: var(--sec);
+    color: var(--lig);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: lighter;
@@ -33,6 +45,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    & p {
+      color: white;
+    }
   }
 
   &__stat {
@@ -47,7 +63,8 @@
     text-align: center;
     overflow: hidden;
     font-size: 1.1rem;
-    color: white;
+    color: var(--sec);
+    margin-bottom: 1.3rem;
     z-index: 0;
 
     &:after {
@@ -57,7 +74,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgb(146, 197, 146);
+      background-color: var(--pri);
       left: 0;
       z-index: -1;
     }

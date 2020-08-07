@@ -1,24 +1,41 @@
+@import "../../../../../styles/abstracts";
+
 .console {
   position: absolute;
   left: 27%;
-  height: 55%;
-  width: 65%;
+  height: 50rem;
+  width: 55%;
   background-color: var(--sec);
   color: white;
   border-bottom-right-radius: 4rem;
+  padding: 2rem;
+
+  @include respond(laptop) {
+    width: 70%;
+  }
 
   &__container {
     width: 85%;
     display: flex;
+    height: 100%;
+    margin: auto;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
-    padding: 2rem 0.5rem;
-    height: 100%;
+
+    @include respond(laptop) {
+      width: 90%;
+    }
+
+    @include respond(tab-land) {
+      padding: 0;
+    }
   }
 
   &__heading {
     font-size: 5rem;
+    padding-bottom: 1rem;
+    position: relative;
+
     &--title {
       color: var(--pri);
     }

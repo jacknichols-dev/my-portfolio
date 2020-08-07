@@ -1,9 +1,15 @@
+@import "../../styles/abstracts";
+
 .Main {
   width: 90%;
   z-index: 0;
-  height: 100vh;
+  max-height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    width: 93%;
+  }
 
   &::-webkit-scrollbar {
     scrollbar-width: none;
@@ -13,26 +19,27 @@
 
   &__home {
     position: relative;
-    height: 100vh;
-    background-color: var(--ter);
+    min-height: 95rem;
+    background-color: var(--lig);
     width: 100%;
     display: block;
   }
 
   &__about {
-    min-height: 100vh;
+    min-height: 90rem;
     position: relative;
     width: 100%;
-    background-color: var(--ter);
+    background-color: var(--lig);
     display: block;
   }
 
   &__contact {
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: var(--lig);
 
     &--container {
       width: 85%;
@@ -48,4 +55,9 @@
 [class^="port-icon-"] {
   font-size: 5rem;
   color: white;
+}
+
+.techLogos {
+  -webkit-filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }

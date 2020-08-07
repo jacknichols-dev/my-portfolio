@@ -15,21 +15,30 @@
     flex-direction: column;
     justify-content: space-between;
 
-    & h3 {
-      font-size: 3rem;
+    & hgroup {
+      color: var(--pri);
+
+      & h3 {
+        padding: 1.3rem 0;
+        font-size: 3rem;
+      }
     }
 
     &--submit {
       border: none;
       outline: none;
-      background-color: var(--sec);
+      background-color: var(--ter);
       color: var(--lig);
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 0.3rem;
       cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.6rem;
+      font-weight: 600;
 
       &:hover {
-        background-color: rgb(103, 155, 133);
+        background-color: var(--pri);
+        color: var(--sec);
       }
     }
   }

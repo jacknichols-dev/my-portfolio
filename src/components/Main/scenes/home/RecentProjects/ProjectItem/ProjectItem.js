@@ -1,14 +1,17 @@
 import React from "react";
 import ProjectNav from "./ProjectNav/ProjectNav";
 
-const ProjectItem = ({ img, alt, desc, title }) => {
+const ProjectItem = (props) => {
   return (
     <>
       <li className="projects__item">
-        <h4>{title}</h4>
-        <img src={img} alt={alt} />
-        <p className="">{desc}</p>
-        <ProjectNav />
+        <figure>
+          <figcaption className="projects__item--title">
+            {props.title}
+          </figcaption>
+          <img src={props.img} alt={props.alt} />
+          <ProjectNav />
+        </figure>
       </li>
     </>
   );
