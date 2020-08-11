@@ -1,22 +1,24 @@
 :root {
   //fonts
-  --f1: "Nunito", sans-serif;
-  --f2: "Abril Fatface", cursive;
+  --f1: "Montserrat", sans-serif;
+  --f2: "Ibarra Real Nova", serif;
   --def: 1.65rem;
 
   //colours
-  --pri: #14daa5;
-  --sec: #1b4f6d;
-  --ter: #674d8a;
-  --lig: #f9ffff;
-  --dar: rgb(11, 16, 22);
-  --gra: linear-gradient(to bottom right, #ffffff 50%, #a9d8e7 150%);
+  --pri: white;
+  --sec: #2b6080;
+  --ter: #5dd4b6;
+  --lig: #eaedf3;
+  --dar: rgb(52, 75, 102);
+  --gra: linear-gradient(to bottom, #ffffff 60%, #eaedf3);
 
   --sat: 82%;
 
   //shadows
-  --sha: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  --sha1: -2rem 0.5rem 4rem rgba(#000, 0.2);
+  --sha: 0rem 0.3rem 1.3rem rgba(0, 0, 0, 0.05),
+    0rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  --sha2: 0rem 0.2rem 0.8rem rgba(0, 0, 0, 0.2),
+    0rem 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
 
   //padding/margins
   --pt: 1rem;

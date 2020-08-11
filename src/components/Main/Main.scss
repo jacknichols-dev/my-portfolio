@@ -2,7 +2,6 @@
 
 .Main {
   width: 90%;
-  z-index: 0;
   max-height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -19,18 +18,26 @@
 
   &__home {
     position: relative;
-    min-height: 95rem;
-    background-color: var(--lig);
+    min-height: 100vh;
+    background-image: var(--gra);
     width: 100%;
     display: block;
+
+    @include respond(laptop) {
+      min-height: 95rem;
+    }
   }
 
   &__about {
-    min-height: 90rem;
+    min-height: 100vh;
     position: relative;
     width: 100%;
     background-color: var(--lig);
     display: block;
+
+    @include respond(laptop) {
+      min-height: 90rem;
+    }
   }
 
   &__contact {
@@ -60,4 +67,5 @@
 .techLogos {
   -webkit-filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  color: var(--ter);
 }

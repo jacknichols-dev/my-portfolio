@@ -10,12 +10,12 @@
   font-family: inherit;
   font-size: var(--def);
   font-weight: 600;
-  transition: all 0.3s;
+  transition: color 0.25s;
   text-align: center;
   cursor: pointer;
 
   &:hover {
-    color: var(--pri);
+    color: var(--ter);
   }
 
   &:active {

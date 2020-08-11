@@ -2,8 +2,8 @@ import React from "react";
 import "./Main.scss";
 import Me from "./scenes/home/Me/Me";
 import Console from "./scenes/home/Console/Console";
-import RecentProjects from "./scenes/home/RecentProjects/RecentProjects";
-
+// import RecentProjects from "./scenes/home/RecentProjects/RecentProjects";
+import Carousel from "../../containers/Carousel/Carousel";
 import Description from "./scenes/about/Description/Description";
 import Stats from "./scenes/about/Stats/Stats";
 import ContactInfo from "./scenes/contact/ContactInfo/ContactInfo";
@@ -17,7 +17,8 @@ const Main = () => {
           <Me />
           <Console />
         </div>
-        <RecentProjects />
+        <Carousel />
+        {/* <RecentProjects /> */}
       </section>
 
       <section className="Main__about" id="about">

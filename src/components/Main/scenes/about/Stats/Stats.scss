@@ -3,9 +3,9 @@
 .Stats {
   position: relative;
   width: 75%;
-  height: 80vh;
-  background-color: var(--ter);
-  top: 12rem;
+  height: 80rem;
+  background-color: white;
+  top: 7rem;
   float: right;
   box-shadow: var(--sha);
 
@@ -32,7 +32,7 @@
   }
 
   &__title {
-    color: var(--lig);
+    color: var(--dar);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: lighter;
@@ -47,7 +47,7 @@
     justify-content: flex-start;
 
     & p {
-      color: white;
+      color: var(--sec);
     }
   }
 
@@ -67,6 +67,10 @@
     margin-bottom: 1.3rem;
     z-index: 0;
 
+    @include respond(tab-land) {
+      margin-bottom: 0.5rem;
+    }
+
     &:after {
       content: "";
       height: 100%;
@@ -74,7 +78,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--pri);
+      background-color: var(--ter);
       left: 0;
       z-index: -1;
     }

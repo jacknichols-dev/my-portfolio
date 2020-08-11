@@ -16,7 +16,7 @@
     justify-content: space-between;
 
     & hgroup {
-      color: var(--pri);
+      color: var(--sec);
 
       & h3 {
         padding: 1.3rem 0;
@@ -27,7 +27,7 @@
     &--submit {
       border: none;
       outline: none;
-      background-color: var(--ter);
+      background-color: var(--sec);
       color: var(--lig);
       padding: 1.5rem;
       border-radius: 0.3rem;
@@ -37,8 +37,7 @@
       font-weight: 600;
 
       &:hover {
-        background-color: var(--pri);
-        color: var(--sec);
+        background-color: var(--ter);
       }
     }
   }

@@ -3,15 +3,31 @@
 .console {
   position: absolute;
   left: 27%;
-  height: 50rem;
+  height: 60rem;
   width: 55%;
   background-color: var(--sec);
   color: white;
   border-bottom-right-radius: 4rem;
   padding: 2rem;
 
+  &:after {
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--pri);
+    position: absolute;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    z-index: -1;
+    border-bottom-right-radius: 4.5rem;
+  }
+
   @include respond(laptop) {
     width: 70%;
+  }
+
+  @include respond(tab-port) {
+    height: 60rem;
   }
 
   &__container {
@@ -35,6 +51,7 @@
     font-size: 5rem;
     padding-bottom: 1rem;
     position: relative;
+    animation: reveal 1s ease-in-out;
 
     &--title {
       color: var(--pri);

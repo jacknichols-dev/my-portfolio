@@ -14,7 +14,7 @@
     justify-content: space-between;
 
     &--icon {
-      color: var(--pri);
+      color: var(--sec);
       font-size: 2rem;
       display: flex;
       align-items: center;
@@ -27,10 +27,11 @@
         font-family: var(--f1);
         margin-left: 1rem;
         font-size: var(--def);
-        color: var(--ter);
+        color: var(--sec);
 
         & span {
           color: var(--ter);
+          font-weight: 600;
         }
       }
     }
